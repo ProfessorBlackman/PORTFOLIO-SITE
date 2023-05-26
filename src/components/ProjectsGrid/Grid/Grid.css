@@ -1,0 +1,47 @@
+.Projects-Grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;   
+    width: 90%; 
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+.Grid-Class{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 4em;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.More{
+  width: 9em;
+}
+
+.More:hover{
+  cursor: pointer;
+}
+
+
+@media (600px < width <= 900px) {
+    .Projects-Grid{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+  }
+
+  @media (width<=600px) {
+    .Projects-Grid{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+  }
+
+
+  @media (900px < width <= 1300px) {
+    .Projects-Grid{
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+  }

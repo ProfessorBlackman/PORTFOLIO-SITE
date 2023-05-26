@@ -1,0 +1,69 @@
+html{
+  /* width: 100vw; */
+  /* display: flex; */
+  /* justify-content: space-around; */
+}
+
+body {
+  
+  background-color: var(--background-color);
+  /* width: 70vw; */
+  /* margin-left: 200px;
+  margin-right: 200px; */
+  color: var(--text-color);
+  border-radius: 20px;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+.anchor-icon{
+    color: var(--text-color);
+}
+
+/* -------------------------------------custom css for navbar------------------------------------------------------------ */
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (600px < width <= 900px) {
+}
+
+@media (width<=600px) {
+}
+
+
+@media (900px < width <= 1300px) {
+}
+
+
+/* ---------------------------------------------Color Schemes------------------------------------------------------------ */
+:root {
+  --primary-color: #000000;
+  --background-color: #ffffff;
+  --text-color: #6366F1;
+  --border-color:#0d0452;
+  /* Add more variables for your website's color scheme */
+}
+
+/* Dark Mode */
+:root.dark-mode {
+  --primary-color: #ffffff;
+  --background-color: #343438;
+  --text-color: #ffffff;
+  --border-color: #ffffff;
+  /* Update variables for the dark color scheme */
+}

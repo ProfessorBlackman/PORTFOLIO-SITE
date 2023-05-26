@@ -1,0 +1,81 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#P{
+    padding-bottom: 50px;
+}
+
+.CV-Link{
+    padding: 10px;
+    border: solid var(--text-color) 1px;
+    margin-bottom: 10px;
+    border-radius: 10px ;
+    text-decoration: none;
+    color: black;
+    background-color: var(--text-color);
+    box-shadow: 0 2px 4px var(--text-color);
+}
+
+.Home-p{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    justify-items: center;
+    /* color: var(--text-color); */
+}
+
+
+
+
+
+.CV-Link:hover{
+    border: solid var(--text-color) 1px;
+    color: white;
+    box-shadow: 0 5px 8px var(--text-color);
+}
+
+
+.Home-Div{
+    padding: 0.5em;
+}
+
+.Img{
+    width: 30em;
+    /* height: 1em; */
+}
+
+.Image{
+    width: 30em;
+}
+
+
+/* .Main{
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2em;
+} */
+
+/* .Heading{ */
+    /* display: grid;
+    grid-template-columns: none;
+    grid-template-rows: max-content; */
+
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+/* } */
+
+
+
+/* .Grid{ */
+    /* display: block; */
+    /* padding: 10px; */
+    /* padding-top: 20px; */
+    /* border-top: 1px solid #ccc; */
+    /* margin-top: 10px; */
+/* } */
