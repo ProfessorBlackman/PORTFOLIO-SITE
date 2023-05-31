@@ -56,14 +56,19 @@ h1 {
   --background-color: #ffffff;
   --text-color: #6366F1;
   --border-color:#0d0452;
+  font-family: 'Courier New', Courier, monospace;
   /* Add more variables for your website's color scheme */
 }
 
 /* Dark Mode */
 :root.dark-mode {
   --primary-color: #ffffff;
-  --background-color: #343438;
+  --background-color: #102D44;
   --text-color: #ffffff;
   --border-color: #ffffff;
   /* Update variables for the dark color scheme */
+}
+body{
+  background-color: var(--background-color);
+  height: 200vh;
 }

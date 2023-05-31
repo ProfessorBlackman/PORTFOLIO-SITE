@@ -5,7 +5,7 @@ export default function GridItem() {
   return (
     <div className='Item'>
         <a id='Project-Link' href='www.linkedin.com'>
-            <img className='Item-H' id='IMG' src='/src/assets/developer.svg' />
+            <img className='Item-H' id='IMG' src='https://ik.imagekit.io/methuselah/developer.svg?updatedAt=1685091384468' />
             <div id='Item-Text'>
                 <h4 id='head'>Developer Project</h4>
                 <p id='text' >Developer</p>

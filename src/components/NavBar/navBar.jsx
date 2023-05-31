@@ -11,7 +11,7 @@ import {
 import './navBar.css'
 import DarkModeToggle from "../ColorScheme/ColorScheme";
 
-export default function NavBar() {
+export default function NavBar({children}) {
   const navItems = [
     { name: "Home", route: "/" },
     { name: "About", route: "/about" },
@@ -29,6 +29,7 @@ export default function NavBar() {
 
   return (
     <div className="Navigation">
+      {/* <>{children}</> */}
       <nav >
         <ul id="Ul-1">
           {navItems.map((link, index) => {
@@ -42,7 +43,8 @@ export default function NavBar() {
           })}
         </ul>
           <ul className="Nav-Item" id="Ul-2">
-            <DarkModeToggle />
+            {/* <DarkModeToggle /> */}
+            {children}
           </ul>
         <ul id="Ul-3">
           <li className="Social-Item">

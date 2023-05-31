@@ -6,7 +6,7 @@ export default function About() {
     <div className="Home-Container-1">
         <div className='Header-1'>
             <div className="About-Div About-Img">
-                <img src="src/assets/mypic.jpg" className="About-Image" />
+                <img src="https://ik.imagekit.io/methuselah/mypic.jpg?updatedAt=1685091385245" className="About-Image" />
                 
             </div>
             <div className="About-Div About-p">
@@ -72,7 +72,7 @@ export default function About() {
                             </div>
                         {/* </ul> */}
                     </div>
-                <a download="developer.svg" href='/src/assets/developer.svg' className='CV-Link-2'>
+                <a download="cv.pdf" href='https://ik.imagekit.io/methuselah/cv.pdf?updatedAt=1685091385333' className='CV-Link-2'>
                 <span className='Home-Button'>Download CV</span>
                 </a>
                 </div>

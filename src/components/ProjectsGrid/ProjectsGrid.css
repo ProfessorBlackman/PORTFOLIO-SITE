@@ -48,7 +48,7 @@
 #Search-Input{
     height:2em;
     width: 9em;
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
     border-radius: 5px;
     font-size: 1em;
 }
