@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./components/ColorScheme/ColorScheme";
 
 import DarkModeToggle from './components/ColorScheme/ColorScheme';
@@ -11,32 +10,38 @@ import './App.css'
 import NavBar from './components/NavBar/navBar';
 import ContactMe from './pages/ContactMe/ContactMe';
 import Blog from './pages/Blog/Blog';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+
+import ReactGA from 'react-ga';
 
 function App() {
+    ReactGA.initialize('YOUR_TRACKING_ID');
+    useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
 
-    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    // const [isDarkMode, setIsDarkMode] = useState(false);
   
-    const handleDarkModeToggle = () => {
-      setIsDarkMode(!isDarkMode);
-      localStorage.setItem('dark-mode',"true")
-      document.documentElement.classList.toggle("dark-mode");
-    };
+    // const handleDarkModeToggle = () => {
+    //   setIsDarkMode(!isDarkMode);
+    //   localStorage.setItem('dark-mode',"true")
+    //   document.documentElement.classList.toggle("dark-mode");
+    // };
 
-    useEffect(()=>{
-      const mode = Boolean(localStorage.getItem('dark-mode'))
-      if (mode) {
-        setIsDarkMode(!isDarkMode)
-        document.documentElement.classList.toggle("dark-mode");
-        console.log(typeof mode)
-      }
-    },[])
+    // useEffect(()=>{
+    //   const mode = Boolean(localStorage.getItem('dark-mode'))
+    //   if (mode) {
+    //     setIsDarkMode(!isDarkMode)
+    //     document.documentElement.classList.toggle("dark-mode");
+    //   }
+    // },[])
 
   return (
     <div className='body-container'>
       <NavBar>
-        <DarkModeToggle handleDarkModeToggle={handleDarkModeToggle} isDarkMode={isDarkMode}/>
+        <DarkModeToggle/>
       </NavBar>
       <Routes>
         <Route path='/' element={<Home />} />

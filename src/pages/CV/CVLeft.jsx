@@ -3,24 +3,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPython } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
-import { faPhp } from "@fortawesome/free-brands-svg-icons";
-import { faMicrosoft } from "@fortawesome/free-brands-svg-icons";
 import { faGit } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faAndroid } from "@fortawesome/free-brands-svg-icons";
-import { SiFlutter, SiGnubash, SiPostgresql, SiVim, SiVisualstudiocode } from "react-icons/si";
+import {
+  SiFlutter,
+  SiGnubash,
+  SiIntellijidea,
+  SiPostgresql, SiRedis,
+  SiVim,
+  SiVisualstudiocode,
+  SiWebstorm
+} from "react-icons/si";
 import { SiPycharm } from "react-icons/si";
 import { SiDjango } from "react-icons/si";
 import { SiFlask } from "react-icons/si";
-import { SiCplusplus } from "react-icons/si";
-import { SiC } from "react-icons/si";
 
 export default function CVLeft() {
   return (
       <div id="CV-left">
         <div id="side-left">
           <div id="CV-Image">
-            <img src="https://ik.imagekit.io/methuselah/mypic.jpg?updatedAt=1685091385245" id="img" />
+            <img src="https://ik.imagekit.io/methuselah/Portfolio/mypic.jpg?updatedAt=1686230737314" id="img" />
           </div>
           <div className="Section">
             <h2 className="main-text" id="contact">
@@ -58,36 +62,20 @@ export default function CVLeft() {
               HTML/CSS/JS
             </p>
             <p className="regular-txt">
-              <FontAwesomeIcon icon={faPhp} className="bullet-icon" />
-              PHP
-            </p>
-            <p className="regular-txt">
               <SiPostgresql className="bullet-icon" />
               PostgresQL
+            </p>
+            <p className="regular-txt">
+              <SiRedis className="bullet-icon" />
+              Redis
             </p>
             <p className="regular-txt">
               <SiFlutter className="bullet-icon" />
               Flutter
             </p>
             <p className="regular-txt">
-              <SiVim className="bullet-icon" />
-              Vim
-            </p>
-            <p className="regular-txt">
               <SiGnubash className="bullet-icon" />
               Bash
-            </p>
-            <p className="regular-txt">
-              <SiCplusplus className="bullet-icon" />
-              C++
-            </p>
-            <p className="regular-txt">
-              <SiC className="bullet-icon" />
-              C Language
-            </p>
-            <p className="regular-txt">
-              <FontAwesomeIcon icon={faMicrosoft} className="bullet-icon" />
-              Microsoft Office
             </p>
           </div>
           <div className="Section">
@@ -112,6 +100,18 @@ export default function CVLeft() {
             <p className="regular-txt">
               <FontAwesomeIcon icon={faAndroid} className="bullet-icon" />
               Android Studio
+            </p>
+            <p className="regular-txt">
+              <SiWebstorm className="bullet-icon" />
+              WebStorm
+            </p>
+            <p className="regular-txt">
+              <SiIntellijidea className="bullet-icon" />
+              Intellij Idea
+            </p>
+            <p className="regular-txt">
+              <SiVim className="bullet-icon" />
+              Vim
             </p>
           </div>
           <div className="Section">
