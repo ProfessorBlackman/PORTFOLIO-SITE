@@ -1,12 +1,18 @@
-import { useState } from "react";
+import {useEffect, useState} from "react";
 
 import {TfiLocationPin} from 'react-icons/tfi'
 import {AiOutlineMail} from 'react-icons/ai'
 import {FiPhone} from 'react-icons/fi'
 
 import "./ContactMe.css";
+import ReactGA from "react-ga";
 
 export default function ContactMe() {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",

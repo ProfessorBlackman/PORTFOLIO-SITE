@@ -1,7 +1,13 @@
 import "./Home.css";
 import ProjectsGrid from "../../components/ProjectsGrid/ProjectsGrid";
+import {useEffect} from "react";
+import ReactGA from "react-ga";
 
 export default function Home() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <div className="Home-Container">
       <div className="Header">
@@ -10,7 +16,7 @@ export default function Home() {
           <p id="P"> A Full-Stack Developer & Tech Enthusiast</p>
           <a
             download="cv.pdf"
-            href="https://ik.imagekit.io/methuselah/cv.pdf?updatedAt=1685091385333"
+            href="https://ik.imagekit.io/methuselah/Portfolio/cv.pdf?updatedAt=1686230756947"
             className="CV-Link"
             target="_blank"
             rel="noreferrer"

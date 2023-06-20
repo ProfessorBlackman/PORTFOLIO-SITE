@@ -1,12 +1,18 @@
 import './About.css'
+import {useEffect} from "react";
+import ReactGA from "react-ga";
 
 
 export default function About() {
+    useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <div className="Home-Container-1">
         <div className='Header-1'>
             <div className="About-Div About-Img">
-                <img src="https://ik.imagekit.io/methuselah/mypic.jpg?updatedAt=1685091385245" className="About-Image" />
+                <img src="https://ik.imagekit.io/methuselah/Portfolio/mypic.jpg?updatedAt=1686230737314" className="About-Image"  alt=''/>
                 
             </div>
             <div className="About-Div About-p">
