@@ -13,9 +13,13 @@ import Blog from './pages/Blog/Blog';
 import { useEffect } from 'react';
 
 import ReactGA from 'react-ga';
+import {inject} from "@vercel/analytics";
+
+
+inject();
 
 function App() {
-    ReactGA.initialize('YOUR_TRACKING_ID');
+    ReactGA.initialize(' G-8S5FNDQYYQ');
     useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
